@@ -17,7 +17,7 @@
             <li>
               <a href="<?php echo site_url(); ?>/careers/">Careers</a>
             </li>
-            <li>
+            <li class="last-child">
               <a href="<?php echo site_url(); ?>/policy/">Policy</a>
             </li>
           </ul>

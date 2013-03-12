@@ -1,0 +1,33 @@
+.navbar .navbar-inner{
+  
+}
+
+.navbar .brand{
+  display: none;
+}
+
+#footer ul{
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+#footer li{
+  display: inline-block;
+  margin-right: 20%;
+}
+
+#footer li.last-child{
+  margin-right: 0;
+}
+
+#footer li a{
+  color: #a0a1a0;
+  font-family: 'Avenir', helvetica, arial, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+#footer li a:hover{
+  color: #fff;
+}
