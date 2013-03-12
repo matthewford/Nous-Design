@@ -1,0 +1,182 @@
+.red{
+  color: #d14;
+}
+
+.blue{
+  color: #3fc3f1;
+}
+
+.clear{
+  clear: both;
+}
+
+.hide{
+  display: none !important;
+}
+
+.form-indent{
+  margin-left: 120px;
+}
+
+.right{
+  float: right !important;
+}
+
+.left{
+  float: left !important;
+}
+
+.righted{
+  text-align: right !important;
+}
+
+.lefted{
+  text-align: left !important;
+}
+
+.centered{
+  text-align: center !important;
+}
+
+.justified{
+  text-align: justify !important;
+}
+
+.uppercased{
+  text-transform: uppercase !important;
+}
+
+.ellipsis {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  em{
+    padding-right: 5px;
+  }
+}
+
+.no_ellipsis,
+.no_ellipsis .control-label{
+  white-space: normal !important;
+}
+
+.ie-show{
+  display: none;
+}
+
+
+
+
+
+hr{
+  background: #fff;
+}
+
+.sub-h{
+  display: block;
+  font-size: 1.07692307692em; //14px;
+  line-height: 20px;
+  color: #666;
+}
+
+.small{
+  font-size: 0.7em;
+}
+
+h1,h2,h3,h4{
+  font-weight: normal;
+  line-height: 1.4;
+  margin: 0;
+}
+
+h1{
+  font-size: 2.46153846154em; //32px
+}
+
+h1 .sub-h{
+  font-size: 0.5em; //16px
+}
+
+h1 .small{
+  font-size: 0.4375em; //14px
+}
+
+h2{
+  font-size: 1.84615384615em; //24px
+}
+
+h2 .sub-h{
+  font-size: 0.58333333333em; //14px
+}
+
+h2 .small{
+  font-size: 0.58333333333em; //14px
+}
+
+h3{
+  font-size: 1.38461538462em; //18px;
+}
+
+h3 .sub-h{
+  font-size: 0.77777777777em; //14px
+}
+
+h3 .small{
+  font-size: 0.7em; //13px
+}
+
+h4{
+  font-size: 1.15384615385em; //15px;
+  font-weight: normal;
+}
+
+h4 .sub-h{
+  font-size: 0.77777777777em; //12px
+}
+
+h4 .small{
+  font-size: 0.8em; //12px
+}
+
+a{
+  color: #00c09a;
+}
+
+a:hover{
+  color: #3f4550;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  margin: 0;
+  padding: 0;
+}
+
+.table th, 
+.table td{
+  line-height: 1.4;
+}
+
+.table.middled th,
+.table.middled td,
+th.middled,
+td.middled{
+  vertical-align: middle !important;
+}
+
+.table.topped td,
+td.topped{
+  vertical-align: top !important;
+}
+
+.table.table-hover tr:hover td{
+  background: #fffddd;
+}

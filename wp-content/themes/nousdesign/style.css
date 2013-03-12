@@ -1,0 +1,110 @@
+/*
+Theme Name: Nous Design
+Theme URI: http://www.nousdesign.co.uk/
+Description: Nous Design for Wordpress
+Author: Bit Zesty
+Author URI: http://www.bitzesty.com/
+Version: 1.0
+Tags: responsive, bootstrap, nousdesign, nous
+*/
+
+@import url('assets/css/font.css'); 
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css');
+@import url('assets/css/base.css');
+@import url('assets/css/theme.css');
+@import url('assets/css/home.css'); 
+
+#html{
+  margin-top: 0 !important;
+}
+
+.admin-bar{
+  margin-top: 28px;
+}
+
+.admin-bar .navbar-fixed-top{
+  top: 28px;
+}
+
+/*################################################*/
+/*################# BODY LAYOUT ##################*/
+/*################################################*/
+
+html, body{
+  height: 100%;
+  margin: 0 !important;
+  padding: 0;
+  font-family: 'ChaletParis', helvetica, arial, sans-serif;
+}
+
+body{
+  position: relative;
+}
+
+#wrapper{
+  min-height: 100%;
+  _height: 100%;
+  z-index: 2;
+}
+
+#wrapper-margin{
+  padding-bottom: 400px;
+  margin: 0 auto;
+}
+
+.logged-in #wrapper-margin{
+  padding-top: 28px;
+}
+
+@media (max-width: 979px){
+  #wrapper-margin{
+    padding-top: 0;
+  }
+
+  .logged-in #wrapper-margin{
+    padding-top: 28px;
+  }
+
+  .navbar-fixed-top{
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px){
+  .navbar-fixed-top, 
+  .navbar-fixed-bottom, 
+  .navbar-static-top{
+    margin: 0;
+  }
+}
+
+#footer{
+  width: 100%;
+  height: 400px;
+  margin-top: -400px;
+  position: relative;
+  z-index: 2;
+
+  .container{
+    padding-top: 20px;
+  }
+
+  p{
+    margin-bottom: 0;
+  }
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.row-fluid .span_first{
+  margin-left: 0;
+}
+
+.navbar .container-fluid,
+.row-fluid{
+  max-width: 1180px;
+  margin: 0 auto;
+}

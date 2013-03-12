@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'ChaletNewYork';
+  src: url('../fonts/Chalet-NewYork1960.otf');
+  src: url('../fonts/Chalet-NewYork1960.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ChaletParis';
+  src: url('../fonts/Chalet-Paris1960.otf');
+  src: url('../fonts/Chalet-Paris1960.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
