@@ -57,12 +57,13 @@ body{
 }
 
 #wrapper-margin{
+  padding-top: 130px;
   padding-bottom: 400px;
   margin: 0 auto;
 }
 
 .logged-in #wrapper-margin{
-  padding-top: 28px;
+  padding-top: 118px;
 }
 
 @media (max-width: 979px){

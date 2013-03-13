@@ -22,7 +22,7 @@
     <div id="wrapper">
       <div id="wrapper-margin">
 
-        <div class="navbar">
+        <div class="navbar navbar-fixed-top">
           <div class="navbar-inner">
             <div class="container-fluid">
               <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -32,17 +32,17 @@
               </a>
               <a class="brand logo" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
               <div class="nav-collapse collapse">
-                <ul class="nav pull-right">
-                  <li class="nav-home">
+                <ul class="nav">
+                  <li class="nav-nous">
                     <a href="<?php echo site_url(); ?>/nous-design/">NousDesign</a>
                   </li>
-                  <li class="nav-work">
+                  <li class="nav-services">
                     <a href="<?php echo site_url(); ?>/services/">Services</a>
                   </li>
-                  <li class="nav-services">
+                  <li class="nav-projects">
                     <a href="<?php echo site_url(); ?>/projects/">Projects</a>
                   </li>
-                  <li class="nav-about">
+                  <li class="nav-contact">
                     <a href="<?php echo site_url(); ?>/contact-us/">ContactUs</a>
                   </li>
                 </ul>

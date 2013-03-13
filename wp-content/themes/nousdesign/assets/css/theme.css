@@ -1,5 +1,45 @@
 .navbar .navbar-inner{
-  
+  background: transparent;
+  border: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-top: 70px;
+  padding-bottom: 5px;
+}
+
+.navbar .nav{
+  margin: 0;
+}
+
+.navbar .nav > li > a{
+  padding: 5px 0px;
+  font-family: 'ChaletNewYork', helvetica, arial, sans-serif;
+  font-size: 45px;
+  line-height: 1;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: none;
+  -moz-transition: color 0.5s linear;
+  -webkit-transition: color 0.5s linear;
+  transition: color 0.5s linear;
+}
+
+.navbar .nav > li > a:hover{
+  color: #fff !important;
+}
+
+.navbar .nav > li.nav-nous > a{
+  color: #696a69;
+}
+.navbar .nav > li.nav-services > a{
+  color: #909090;
+}
+.navbar .nav > li.nav-projects > a{
+  color: #aeacac;
+}
+.navbar .nav > li.nav-contact > a{
+  color: #e5e5e5;
 }
 
 .navbar .brand{
