@@ -1,0 +1,69 @@
+.home-carousel,
+.home-carousel-text{
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-carousel ul{
+  width: 100000px;
+  position: relative;
+}
+
+.home-carousel ul,
+.home-carousel-text ul{
+  margin-top: 45px;
+}
+
+.home-carousel ul li{
+  float: left;
+  margin-right: 20px;
+}
+
+.home-carousel ul li img{
+  max-width: none;
+}
+
+.home-carousel-text{
+  position: absolute;
+  top: 45px;
+}
+
+.home-carousel-text ul li{
+  position: absolute;
+  font-family: 'ChaletNewYork', helvetica, arial, sans-serif;
+  font-size: 300px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.3;
+}
+
+.home-carousel-text ul li.small{
+  font-size: 70px;
+}
+
+.home-carousel-text ul li.design{
+  font-family: 'ChaletParis', helvetica, arial, sans-serif;
+  color: #999;
+}
+
+.home-carousel-text ul li.nousdesign_1{
+  top: 40px;
+  margin-left: 400px;
+}
+
+.home-carousel-text ul li.nousdesign_2{
+  bottom: 0px;
+  margin-left: 1000px;
+  opacity: 0.5;
+}
+
+.home-carousel-text ul li.nousdesign_3{
+  top: 120px;
+  opacity: 0.5;
+}
+
+.home-carousel-text ul li.nousdesign_4{
+  top: 180px;
+  margin-left: 1000px;
+}
