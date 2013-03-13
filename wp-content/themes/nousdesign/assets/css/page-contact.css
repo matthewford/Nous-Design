@@ -1,0 +1,79 @@
+.contact-page-height{
+  display: block;
+  height: 400px;
+}
+
+.page-contact{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -500px !important;
+  margin-top: -200px !important;
+}
+
+@media (max-height: 650px){
+  .page-contact{
+    position: relative;
+    margin: 0 auto !important;
+    top: 0;
+    left: 0;
+  }
+}
+
+.page-contact .contact-background{
+  position: absolute;
+  width: 100%;
+  color: #999;
+  font-size: 280px;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 1;
+  padding-top: 170px;
+}
+
+.page-contact .contact-background em{
+  position: absolute;
+  font-family: 'ChaletNewYork', helvetica, arial, sans-serif;
+  font-style: normal;
+  color: #fff;
+  top: 0;
+  left: -80px;
+  opacity: 0.3;
+}
+.page-contact .contact-background span{
+  opacity: 0.2;
+  position: relative;
+  right: -80px;
+}
+
+.page-contact .contact-foreground{
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  color: #727473;
+}
+
+.page-contact .contact-foreground h1{
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.page-contact .contact-foreground h1 em,
+.page-contact .contact-foreground p{
+  font-family: 'ChaletNewYork', helvetica, arial, sans-serif;
+  font-style: normal;
+}
+
+.page-contact .contact-foreground p{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.page-contact .contact-foreground a{
+  color: #333436;
+}
+
+.page-contact .contact-foreground a:hover{
+  color: #fff;
+}

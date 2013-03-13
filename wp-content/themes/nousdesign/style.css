@@ -13,7 +13,11 @@ Tags: responsive, bootstrap, nousdesign, nous
 @import url('bootstrap/css/bootstrap-responsive.css');
 @import url('assets/css/base.css');
 @import url('assets/css/theme.css');
-@import url('assets/css/home.css'); 
+@import url('assets/css/page-home.css'); 
+@import url('assets/css/page-nousdesign.css'); 
+@import url('assets/css/page-services.css'); 
+@import url('assets/css/page-projects.css'); 
+@import url('assets/css/page-contact.css'); 
 
 #html{
   margin-top: 0 !important;
