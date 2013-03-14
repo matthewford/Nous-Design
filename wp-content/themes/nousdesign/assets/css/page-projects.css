@@ -1,0 +1,50 @@
+.project-carousel{
+  width: 100%;
+}
+
+.project-carousel ul{
+  width: 100000px;
+  position: relative;
+}
+
+.project-carousel ul{
+  margin-top: 45px;
+}
+
+.project-carousel ul li{
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+
+.project-carousel ul li img{
+  max-width: none;
+}
+
+.project-carousel ul li h3{
+  position: absolute;
+  bottom: -34px;
+  color: #747474;
+  font-family: 'Myriad Pro', helvetica, arial, sans-serif;
+  font-size: 21px;
+  font-weight: normal;
+  width: 950px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.project-carousel ul li a{
+  position: absolute;
+  font-family: 'Myriad Pro', helvetica, arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  bottom: 5px;
+  right: 10px;
+  text-align: right;
+  color: #595959;
+}
+
+.project-carousel ul li a:hover{
+  color: #fff;
+}
