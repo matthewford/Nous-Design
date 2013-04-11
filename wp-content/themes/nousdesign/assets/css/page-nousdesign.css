@@ -4,6 +4,7 @@
 
 .page-nousdesign .content-text{
   padding-left: 40px;
+  min-height: 680px;
 }
 
 .page-nousdesign .content-text p{
@@ -62,5 +63,9 @@
   }
   .page-nousdesign .content-text p{
     padding-right: 40%;
+  }
+
+  .page-nousdesign .content-text{
+    min-height: 500px;
   }
 }

@@ -4,6 +4,7 @@
 
 .page-services .content-text{
   padding-left: 40px;
+  min-height: 680px;
 }
 
 .page-services .content-text p{
@@ -67,6 +68,10 @@
   .page-services .content-text{
     padding-left: 10px;
   }
+
+  .page-services .content-text{
+    min-height: 600px;
+  }
 }
 
 @media (max-width: 767px){
@@ -78,5 +83,9 @@
   }
   .page-services .content-text p{
     padding-right: 40%;
+  }
+
+  .page-services .content-text{
+    min-height: 500px;
   }
 }
