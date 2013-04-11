@@ -26,6 +26,7 @@ body .home-container{
 .home-carousel-text{
   width: 100%;
   overflow: hidden;
+  height: 455px;
 }
 
 .home-carousel ul{
