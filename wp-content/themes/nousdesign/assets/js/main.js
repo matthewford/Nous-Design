@@ -54,6 +54,12 @@ $(function() {
       el.jcarouselControl(el.data());
   });
 
+  //scales carousel
+  $('.project-carousel ul li .project-image-container').width($('.page-projects').width());
+  window.onresize = function(event) {
+    $('.project-carousel ul li .project-image-container').width($('.page-projects').width());
+  }
+
   //Makes nav text scale to proper widths
   $('.navbar .nav > li > a').fitText();
   $(".navbar .nav > li.nav-nous > a").fitText(0.64);

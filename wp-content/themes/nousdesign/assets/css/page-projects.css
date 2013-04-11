@@ -21,7 +21,8 @@ body .projects-container{
 }
 
 .project-carousel,
-.project-carousel-container{
+.project-carousel-container,
+.project-carousel ul li .project-image-container{
   height: 500px;
   position: relative;
 }
@@ -94,6 +95,14 @@ body .projects-container{
 .project-carousel ul li img{
   max-width: 100%;
   height: 455px;
+}
+@media (max-width: 1000px){
+  .project-carousel ul li .project-image-container{
+    overflow: hidden;
+  }
+  .project-carousel ul li img{
+    max-width: none;
+  }
 }
 
 .project-carousel ul li h3{
