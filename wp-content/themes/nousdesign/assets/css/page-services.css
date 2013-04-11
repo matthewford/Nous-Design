@@ -54,7 +54,7 @@
 
 @media (max-width: 1024px){
   .page-services .content-text p:nth-child(1){
-    margin-top: 80px;
+    margin-top: 50px;
   }
   .page-services .content-text{
     padding-left: 20px;
@@ -76,7 +76,7 @@
 
 @media (max-width: 767px){
   .page-services .content-text p:nth-child(1){
-    margin-top: 30px;
+    margin-top: 10px;
   }
   .page-services .content-text p:nth-child(1) img.alignright{
     margin-top: -20px;
