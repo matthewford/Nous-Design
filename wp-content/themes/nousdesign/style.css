@@ -123,6 +123,10 @@ body{
   body{
     font-size: 9px;
   }
+
+  .navbar .navbar-inner{
+    padding-top: 50px;
+  }
 }
 @media (max-width: 979px){
   #wrapper-margin{
@@ -135,6 +139,11 @@ body{
 
   .navbar-fixed-top{
     margin-bottom: 0;
+    position: fixed;
+  }
+
+  .navbar .navbar-inner{
+    padding-top: 40px;
   }
 }
 
@@ -146,5 +155,9 @@ body{
   .navbar-fixed-bottom, 
   .navbar-static-top{
     margin: 0;
+  }
+
+  .navbar .navbar-inner{
+    padding-top: 30px;
   }
 }
