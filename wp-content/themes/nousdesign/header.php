@@ -15,6 +15,7 @@
 
     <?php wp_enqueue_script("jquery"); ?>
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/main.js"></script>
     <?php wp_head(); ?>
   </head>

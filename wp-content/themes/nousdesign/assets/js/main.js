@@ -1,5 +1,5 @@
 $(function() {
-  //carousel
+  //Home page carousel
   var win_width = $(window).width();   // returns width of browser viewport
   var win_height = $(window).height();   // returns height of browser viewport
   var homeCarouselWidth = 0;
@@ -40,4 +40,17 @@ $(function() {
     $('.home-carousel-text .nousdesign_1, .home-carousel-text .nousdesign_4').css('left', (text_carousel_x*2)+"px");
     $('.home-carousel-text .nousdesign_2, .home-carousel-text .nousdesign_3').css('left', (text_carousel_x*-2)+"px");
   }
+
+  //Projects page carousel
+  $('.project-carousel').jcarousel({
+    'wrap': 'circular',
+    'animation': {
+      'duration': 300,
+      'easing':   'linear'
+    }
+  });
+  $('[data-jcarousel-control]').each(function() {
+      var el = $(this);
+      el.jcarouselControl(el.data());
+  });
 });

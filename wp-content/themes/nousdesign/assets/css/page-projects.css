@@ -1,24 +1,89 @@
+body .projects-container{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  margin-top: -250px;
+}
+
 .project-carousel{
   width: 100%;
+  overflow: hidden;
+}
+
+.project-carousel,
+.project-carousel-container{
+  height: 500px;
+  position: relative;
+}
+
+.project-carousel-container .carousel-control{
+  position: absolute;
+  display: block;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  width: 20%;
+  border: none;
+  text-indent: -9999px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  z-index: 999;
+  background: transparent;
+}
+.project-carousel-container .carousel-control span{
+  position: absolute;
+  display: block;
+  top: 50%;
+  margin-top: -24px;
+  width: 48px;
+  height: 54px;
+  text-indent: -9999px;
+  background: url(../../assets/images/controls.png) no-repeat;
+}
+
+.project-carousel-container .carousel-control-prev{
+  left: 0;
+}
+.project-carousel-container .carousel-control-next{
+  left: auto;
+  right: 0;
+}
+.project-carousel-container .carousel-control-prev span{
+  left: 0;
+  background-position: 0 -100px;
+}
+.project-carousel-container .carousel-control-next span{
+  right: 0;
 }
 
 .project-carousel ul{
   width: 100000px;
-  position: relative;
-}
-
-.project-carousel ul{
-  margin-top: 45px;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .project-carousel ul li{
   float: left;
-  margin-right: 20px;
+  position: relative;
+}
+
+.project-carousel ul li .project-image-container{
+  width: 1000px;
+  text-align: center;
+  display: block;
+}
+
+.project-carousel ul li .project-image{
+  display: inline-block;
   position: relative;
 }
 
 .project-carousel ul li img{
-  max-width: none;
+  max-width: 100%;
   height: 455px;
 }
 
@@ -29,13 +94,15 @@
   font-family: 'Myriad Pro', helvetica, arial, sans-serif;
   font-size: 21px;
   font-weight: normal;
-  width: 950px;
+  width: 100%;
+  min-width: 500px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  text-align: left;
 }
 
-.project-carousel ul li a{
+.project-carousel ul li .credits{
   position: absolute;
   font-family: 'Myriad Pro', helvetica, arial, sans-serif;
   font-size: 10px;
@@ -46,6 +113,6 @@
   color: #595959;
 }
 
-.project-carousel ul li a:hover{
+.project-carousel ul li a:hover .credits{
   color: #fff;
 }
