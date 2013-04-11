@@ -31,7 +31,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </a>
-              <a class="brand logo" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
+              <a class="brand logo" href="<?php echo site_url(); ?>"><h1><?php bloginfo('name'); ?></h1></a>
               <div class="nav-collapse collapse">
                 <ul class="nav">
                   <li class="nav-nous">
