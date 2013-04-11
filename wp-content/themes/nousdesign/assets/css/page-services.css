@@ -1,3 +1,7 @@
+.page-services{
+  position: relative;
+}
+
 .page-services .content-text{
   padding-left: 40px;
 }
@@ -7,6 +11,7 @@
   line-height: 1.2;
   margin-bottom: 20px;
   color: #909090;
+  padding-right: 38%;
 }
 
 .page-services .content-text ul{
@@ -30,9 +35,12 @@
   color: #3a3a3a;
 }
 .page-services .content-text p:nth-child(1) img.alignright{
-  position: relative;
+  position: absolute;
+  right: 0;
   margin-top: -80px;
-  margin-left: 90px;
+  max-width: 280px;
+  width: 30%;
+  float: none;
 }
 
 .page-services .content-text p:nth-child(2){
@@ -41,4 +49,34 @@
 
 .page-services .content-text p:nth-child(3){
   color: #605f5f;
+}
+
+@media (max-width: 1024px){
+  .page-services .content-text p:nth-child(1){
+    margin-top: 80px;
+  }
+  .page-services .content-text{
+    padding-left: 20px;
+  }
+  .page-services .content-text p:nth-child(1) img.alignright{
+    margin-top: -40px;
+    right: 10px;
+  }
+}
+@media (max-width: 979px){
+  .page-services .content-text{
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 767px){
+  .page-services .content-text p:nth-child(1){
+    margin-top: 30px;
+  }
+  .page-services .content-text p:nth-child(1) img.alignright{
+    margin-top: -20px;
+  }
+  .page-services .content-text p{
+    padding-right: 40%;
+  }
 }
