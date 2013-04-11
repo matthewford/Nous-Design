@@ -161,3 +161,9 @@ body{
     padding-top: 30px;
   }
 }
+
+@media (max-width: 600px){
+  #footer li{
+    margin-right: 12%;
+  }
+}

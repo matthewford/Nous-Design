@@ -77,8 +77,9 @@
 }
 
 #footer ul{
-  margin-left: 10%;
+  //margin-left: 10%;
   margin-top: 20px;
+  display: inline;
 }
 
 #footer li{

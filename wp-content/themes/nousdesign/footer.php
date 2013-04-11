@@ -6,7 +6,7 @@
   <footer id="footer">
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span12">
+        <div class="span12 centered">
           <ul>
             <li>
               <a href="<?php echo site_url(); ?>/making/">In the Making</a>
