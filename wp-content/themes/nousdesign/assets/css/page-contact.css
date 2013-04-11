@@ -38,9 +38,15 @@ body .contact-page-height{
   color: #fff;
   top: 0;
   left: -80px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter:alpha(opacity=30);
+  -moz-opacity: 0.3;
   opacity: 0.3;
 }
 .page-contact .contact-background span{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter:alpha(opacity=20);
+  -moz-opacity: 0.2;
   opacity: 0.2;
   position: relative;
   right: -80px;
