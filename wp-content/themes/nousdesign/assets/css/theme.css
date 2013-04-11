@@ -25,10 +25,6 @@
   transition: color 0.5s linear;
 }
 
-.navbar .nav > li > a:hover{
-  color: #fff !important;
-}
-
 .navbar .nav > li.nav-nous > a{
   color: #696a69;
 }
@@ -40,6 +36,15 @@
 }
 .navbar .nav > li.nav-contact > a{
   color: #e5e5e5;
+}
+
+.page-template-page-nousdesign-php .navbar .nav > li.nav-nous a,
+.page-template-page-services-php .navbar .nav > li.nav-services a,
+.page-template-page-projects-php .navbar .nav > li.nav-projects a,
+.page-template-page-contact-php .navbar .nav > li.nav-contact a,
+.navbar .nav > li.active a,
+.navbar .nav > li > a:hover{
+  color: #fff !important;
 }
 
 .navbar .brand{
