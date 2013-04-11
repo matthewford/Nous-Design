@@ -18,11 +18,12 @@ $(function() {
     });
   });
 
-  $('.home-carousel ul li').clone().appendTo('.home-carousel ul');
-  $('.home-carousel-text ul li.nousdesign_1.second').css('margin-left', ((win_width-400)*-1)+'px');
-  $('.home-carousel-text ul li.nousdesign_4.second').css('margin-left', ((win_width-1000)*-1)+'px');
-  $('.home-carousel-text ul li.nousdesign_2.second').css('margin-left', ((win_width+1000))+'px');
-  $('.home-carousel-text ul li.nousdesign_3.second').css('margin-left', ((win_width))+'px');
+  $('.home-carousel ul').clone().appendTo('.home-carousel');
+  $('.home-carousel-text ul').each(function(){
+    $(this).clone().appendTo($(this).closest('.home-carousel-text'));
+    $(this).clone().appendTo($(this).closest('.home-carousel-text'));
+    $(this).clone().appendTo($(this).closest('.home-carousel-text'));
+  });
 
   setInterval(everyframe, 20);
   var carousel_x = 0;
@@ -33,12 +34,12 @@ $(function() {
       carousel_x = 0;
     }
     text_carousel_x += 1;
-    if(text_carousel_x > win_width/2){
+    if(text_carousel_x > $('.home-carousel-text ul').width()){
       text_carousel_x = 0;
     }
     $('.home-carousel ul').css('left', (carousel_x*-1)+"px");
-    $('.home-carousel-text .nousdesign_1, .home-carousel-text .nousdesign_4').css('left', (text_carousel_x*2)+"px");
-    $('.home-carousel-text .nousdesign_2, .home-carousel-text .nousdesign_3').css('left', (text_carousel_x*-2)+"px");
+    $('.home-carousel-text-right').css('right', (text_carousel_x*-2)+"px");
+    $('.home-carousel-text-left').css('left', (text_carousel_x*-2)+"px");
   }
 
   //Projects page carousel

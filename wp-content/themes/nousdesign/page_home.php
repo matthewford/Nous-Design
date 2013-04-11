@@ -46,31 +46,23 @@ get_header(); ?>
         <?php } ?>
       </ul>
     </div>
-    <div class="home-carousel-text">
+    <div class="home-carousel-text home-carousel-text-right">
       <ul>
         <li class="large nous nousdesign_1">
-          Nous
-        </li>
-        <li class="large design nousdesign_2">
-          Design
-        </li>
-        <li class="small nous nousdesign_3">
           Nous
         </li>
         <li class="small design nousdesign_4">
           Design
         </li>
-        <li class="large nous nousdesign_1 second">
-          Nous
-        </li>
-        <li class="large design nousdesign_2 second">
+      </ul>
+    </div>
+    <div class="home-carousel-text home-carousel-text-left">
+      <ul>
+        <li class="large design nousdesign_2">
           Design
         </li>
-        <li class="small nous nousdesign_3 second">
+        <li class="small nous nousdesign_3">
           Nous
-        </li>
-        <li class="small design nousdesign_4 second">
-          Design
         </li>
       </ul>
     </div>
