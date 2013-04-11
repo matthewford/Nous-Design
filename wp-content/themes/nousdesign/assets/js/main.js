@@ -4,12 +4,12 @@ $(function() {
   var win_height = $(window).height();   // returns height of browser viewport
   var homeCarouselWidth = 0;
   $('.home-carousel ul li img').each(function(){
-    $(this).css({
-      'height': (win_height-300)+"px"
-    });
-    $('.home-carousel-text').css({
-      'height': (win_height-300)+"px"
-    });
+    // $(this).css({
+    //   'height': (win_height-300)+"px"
+    // });
+    // $('.home-carousel-text').css({
+    //   'height': (win_height-300)+"px"
+    // });
   
     $(this).load(function () {
       homeCarouselWidth += $(this).width()+20;
@@ -24,7 +24,7 @@ $(function() {
   $('.home-carousel-text ul li.nousdesign_2.second').css('margin-left', ((win_width+1000))+'px');
   $('.home-carousel-text ul li.nousdesign_3.second').css('margin-left', ((win_width))+'px');
 
-  setInterval(everyframe, 1);
+  setInterval(everyframe, 20);
   var carousel_x = 0;
   var text_carousel_x = 0;
   function everyframe(){

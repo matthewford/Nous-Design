@@ -19,6 +19,7 @@
 
 .project-carousel ul li img{
   max-width: none;
+  height: 455px;
 }
 
 .project-carousel ul li h3{

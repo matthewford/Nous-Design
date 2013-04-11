@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-  <div class="contact-page-height">
+  <div class="container-fluid contact-page-height">
     <div class="row-fluid page-contact centered">
       <div class="span12 content-text">
         <div class="contact-background">
