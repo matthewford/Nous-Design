@@ -10,22 +10,41 @@
 get_header(); ?>
   <div class="container-fluid home-container">
     <div class="home-carousel">
+      <?php 
+        $all_images = array();
+
+        if ( have_posts() ) : while ( have_posts() ) : the_post();
+          $args = array(
+            'numberposts' => -1, // Using -1 loads all posts
+            'orderby' => 'menu_order', // This ensures images are in the order set in the page media manager
+            'order'=> 'ASC',
+            'post_mime_type' => 'image', // Make sure it doesn't pull other resources, like videos
+            'post_parent' => $post->ID, // Important part - ensures the associated images are loaded
+            'post_status' => null,
+            'post_type' => 'attachment'
+          );
+
+          $images = get_children( $args );
+
+          if($images){
+            foreach($images as $image){
+              array_push( $all_images, array(
+                "id"      => $image->ID,
+                "title"   => get_the_title(),
+                "image"   => $image->guid,
+                "credits" => $image->post_excerpt
+              ));
+            }
+          }
+
+        endwhile; endif;
+      ?>
       <ul>
-        <li>
-          <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/home-1.jpg">
-        </li>
-        <li>
-          <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/home-2.jpg">
-        </li>
-        <li>
-          <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/home-3.jpg">
-        </li>
-        <li>
-          <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/home-4.jpg">
-        </li>
-        <li>
-          <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/home-5.jpg">
-        </li>
+        <?php foreach($all_images as $image_item){ ?>
+          <li>
+            <img src="<?php echo $image_item['image']; ?>"/>
+          </li>
+        <?php } ?>
       </ul>
     </div>
     <div class="home-carousel-text">
