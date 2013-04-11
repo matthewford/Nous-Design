@@ -44,6 +44,7 @@ html, body{
 
 body{
   position: relative;
+  font-style: 10px;
 }
 
 #wrapper{

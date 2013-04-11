@@ -53,4 +53,11 @@ $(function() {
       var el = $(this);
       el.jcarouselControl(el.data());
   });
+
+  //Makes nav text scale to proper widths
+  $('.navbar .nav > li > a').fitText();
+  $(".navbar .nav > li.nav-nous > a").fitText(0.64);
+  $(".navbar .nav > li.nav-services > a").fitText(0.48);
+  $(".navbar .nav > li.nav-projects > a").fitText(0.50);
+  $(".navbar .nav > li.nav-contact > a").fitText(0.53);
 });
