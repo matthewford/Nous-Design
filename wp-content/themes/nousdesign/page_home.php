@@ -30,9 +30,8 @@ get_header(); ?>
             foreach($images as $image){
               array_push( $all_images, array(
                 "id"      => $image->ID,
-                "title"   => get_the_title(),
-                "image"   => $image->guid,
-                "credits" => $image->post_excerpt
+                "title"   => $image->post_title,
+                "image"   => $image->guid
               ));
             }
           }
@@ -42,7 +41,7 @@ get_header(); ?>
       <ul>
         <?php foreach($all_images as $image_item){ ?>
           <li>
-            <img src="<?php echo $image_item['image']; ?>"/>
+            <img src="<?php echo $image_item['image']; ?>" alt="<?php echo $image_item['title']; ?>" title="<?php echo $image_item['title']; ?>"/>
           </li>
         <?php } ?>
       </ul>

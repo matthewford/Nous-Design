@@ -55,7 +55,7 @@ get_header(); ?>
                       <div class="project-image">
                         <?php if( strlen($image_item['credits']) > 0 ){ ?>
                           <a href="<?php echo get_post_meta($image_item['id'] , '_wp_attachment_image_alt', true); ?>">
-                            <img src="<?php echo $image_item['image']; ?>"/>
+                            <img src="<?php echo $image_item['image']; ?>" alt="<?php echo $image_item['title']; ?>" title="<?php echo $image_item['title']; ?>" />
 
                             <h3><?php echo $image_item['title']; ?></h3>
                             <span class="credits">
@@ -63,7 +63,7 @@ get_header(); ?>
                             </span>
                           </a>
                         <?php }else{ ?>
-                          <img src="<?php echo $image_item['image']; ?>"/>
+                          <img src="<?php echo $image_item['image']; ?>" alt="<?php echo $image_item['title']; ?>" title="<?php echo $image_item['title']; ?>" />
 
                           <h3><?php echo $image_item['title']; ?></h3>
                         <?php }; ?>
