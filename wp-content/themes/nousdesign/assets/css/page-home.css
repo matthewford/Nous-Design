@@ -40,7 +40,7 @@ body .home-container{
 .home-carousel-text ul li{
   position: absolute;
   font-family: 'ChaletNewYork', helvetica, arial, sans-serif;
-  font-size: 250px;
+  font-size: 25em;
   line-height: 1;
   text-transform: uppercase;
   color: #fff;
@@ -48,7 +48,7 @@ body .home-container{
 }
 
 .home-carousel-text ul li.small{
-  font-size: 60px;
+  font-size: 6em;
 }
 
 .home-carousel-text ul li.design{

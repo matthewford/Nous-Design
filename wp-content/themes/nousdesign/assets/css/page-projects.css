@@ -92,7 +92,7 @@ body .projects-container{
   bottom: -34px;
   color: #747474;
   font-family: 'Myriad Pro', helvetica, arial, sans-serif;
-  font-size: 21px;
+  font-size: 2.1em;
   font-weight: normal;
   width: 100%;
   min-width: 500px;
@@ -105,7 +105,7 @@ body .projects-container{
 .project-carousel ul li .credits{
   position: absolute;
   font-family: 'Myriad Pro', helvetica, arial, sans-serif;
-  font-size: 10px;
+  font-size: 1em;
   letter-spacing: 1px;
   bottom: 5px;
   right: 10px;

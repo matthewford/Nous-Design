@@ -93,7 +93,7 @@
 #footer li a{
   color: #a0a1a0;
   font-family: 'Avenir', helvetica, arial, sans-serif;
-  font-size: 10px;
+  font-size: 1em;
   text-transform: uppercase;
   padding: 5px;
 }
