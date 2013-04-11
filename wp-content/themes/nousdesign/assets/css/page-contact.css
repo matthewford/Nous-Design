@@ -13,7 +13,7 @@ body .contact-page-height{
 }
 
 @media (max-height: 650px){
-  .page-contact{
+  body .contact-page-height{
     position: relative;
     margin: 0 auto !important;
     top: 0;

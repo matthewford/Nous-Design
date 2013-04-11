@@ -5,6 +5,22 @@ body .home-container{
   margin-top: -275px;
 }
 
+
+@media (max-height: 830px){
+  body .home-container{
+    margin-top: -190px;
+  }
+}
+
+@media (max-height: 650px){
+  body .home-container{
+    position: relative;
+    margin: 0 auto !important;
+    top: 0;
+    left: 0;
+  }
+}
+
 .home-carousel,
 .home-carousel-text{
   width: 100%;
@@ -14,11 +30,6 @@ body .home-container{
 .home-carousel ul{
   width: 100000px;
   position: relative;
-}
-
-.home-carousel ul,
-.home-carousel-text ul{
-  margin-top: 45px;
 }
 
 .home-carousel ul li{
@@ -33,7 +44,7 @@ body .home-container{
 
 .home-carousel-text{
   position: absolute;
-  top: 45px;
+  top: 0;
   height: 455px;
 }
 

@@ -6,6 +6,15 @@ body .projects-container{
   margin-top: -250px;
 }
 
+@media (max-height: 650px){
+  body .projects-container{
+    position: relative;
+    margin: 0 auto !important;
+    top: 0;
+    left: 0;
+  }
+}
+
 .project-carousel{
   width: 100%;
   overflow: hidden;
