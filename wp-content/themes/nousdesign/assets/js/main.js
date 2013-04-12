@@ -76,4 +76,14 @@ $(function() {
   window.onresize = function(event) {
     $('.project-carousel ul li .project-image-container').width($('.page-projects').width());
   }
+
+
+  //allows swiping for carousel controlling
+  if($('#ios-check').css('display') == "block"){
+    $('.project-carousel').hammer().on("swipeleft", function(event) {
+      $(this).jcarousel('scroll', '+=1');
+    }).on("swiperight", function(event) {
+      $(this).jcarousel('scroll', '-=1');
+    });
+  };
 });
