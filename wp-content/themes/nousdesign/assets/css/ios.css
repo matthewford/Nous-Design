@@ -5,6 +5,25 @@
   #ios-check{
     display: block;
   }
+
+  #mobile-stick{
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+  }
+  #mobile-wrapper{
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #mobile-stick .sub-nav{
+    display: none;
+  }
 }
 
 /* iPads (landscape) ----------- */
@@ -48,6 +67,7 @@
     display: block;
   }
 
+  #wrapper,
   #wrapper-margin,
   #footer,
   .container-fluid{
@@ -59,10 +79,9 @@
   }
 
   .navbar .navbar-inner{
-    height: 80px;
-    padding-top: 20px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
+    padding-top: 10px;
+    min-height: 0;
   }
 
   .navbar .nav.pull-right{
@@ -70,84 +89,47 @@
     float: none;
     display: inline-block;
     text-align: center;
-    margin-top: 20px;
     padding-left: 0px;
     padding-right: 0px;
     width: 100%;
   }
 
   .navbar .nav > li{
-    margin-bottom: 15px;
     float: none;
     display: inline-block;
+    left: 3px;
   }
 
   body #wrapper-margin{
-    padding-bottom: 250px;
+    padding-bottom: 25px;
   }
 
   body #footer{
-    height: 250px;
-    margin-top: -250px;
+    height: 25px;
+    margin-top: -25px;
   }
 
   body #footer ul{
     margin: 0;
     float: none;
+    top: 5px;
+  }
+
+  body #footer .span12{
+    min-height: 0;
   }
 
   #footer ul li{
-    margin-bottom: 5px;
-  }
-
-  #footer ul li a{
-    text-transform: uppercase;
+    margin-right: 8%;
+    line-height: 1;
   }
 }
 
-/* iPhones (portrait and landscape) ----------- */
+/* iPhones (landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
   #wrapper-margin,
   #footer,
   .container-fluid{
     min-width: 480px;
-  }
-
-
-  body #wrapper-margin{
-    padding-bottom: 170px;
-  }
-  
-  body #footer{
-    height: 170px;
-    margin-top: -170px;
-  }
-
-  body #footer ul{
-    margin: 0;
-    float: left;
-    width: 45%;
-  }
-
-  #footer .row-fluid .span2{
-    width: 25%;
-    margin-left: 0;
-  }
-
-  #footer .row-fluid .span2 p{
-    padding-left: 0px;
-  }
-
-  body #footer .contact-links .twitter-link{
-    padding-top: 3px;
-    padding-bottom: 6px;
-  }
-
-  #footer ul li{
-    margin-bottom: 5px;
-  }
-
-  #footer ul li a{
-    text-transform: uppercase;
   }
 }

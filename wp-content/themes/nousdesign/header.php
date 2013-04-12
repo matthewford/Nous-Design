@@ -49,27 +49,28 @@
     <div id="mobile-check"></div>
     <div id="ios-check"></div>
 
-    <div id="wrapper">
-      <div id="wrapper-margin">
+    <div id="mobile-wrapper">
+      <div id="wrapper">
+        <div id="wrapper-margin">
 
-        <div class="navbar navbar-fixed-top">
-          <div class="navbar-inner">
-            <div class="container-fluid">
-              <a class="brand logo" href="<?php echo site_url(); ?>"><h1><?php bloginfo('name'); ?></h1></a>
-              <ul class="nav">
-                <li class="nav-nous">
-                  <a href="<?php echo site_url(); ?>/nous-design/">NousDesign</a>
-                </li>
-                <li class="nav-services">
-                  <a href="<?php echo site_url(); ?>/services/">Services</a>
-                </li>
-                <li class="nav-projects">
-                  <a href="<?php echo site_url(); ?>/projects/">Projects</a>
-                </li>
-                <li class="nav-contact">
-                  <a href="<?php echo site_url(); ?>/contact-us/">ContactUs</a>
-                </li>
-              </ul>
+          <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+              <div class="container-fluid">
+                <a class="brand logo" href="<?php echo site_url(); ?>"><h1><?php bloginfo('name'); ?></h1></a>
+                <ul class="nav">
+                  <li class="nav-nous">
+                    <a href="<?php echo site_url(); ?>/nous-design/">NousDesign</a>
+                  </li>
+                  <li class="nav-services">
+                    <a href="<?php echo site_url(); ?>/services/">Services</a>
+                  </li>
+                  <li class="nav-projects">
+                    <a href="<?php echo site_url(); ?>/projects/">Projects</a>
+                  </li>
+                  <li class="nav-contact">
+                    <a href="<?php echo site_url(); ?>/contact-us/">ContactUs</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
