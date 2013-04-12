@@ -8,7 +8,7 @@
       if ( $isiPad ) { ?>
         <meta name="viewport" content="width=device-width, initial-scale=0.78367346938">
       <?php } else { ?>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0;">
     <?php } ?>
 
     <!-- Le styles -->

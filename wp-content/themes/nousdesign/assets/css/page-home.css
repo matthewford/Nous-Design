@@ -23,7 +23,9 @@ body .home-container{
 }
 
 .home-carousel,
-.home-carousel-text{
+.home-carousel-text,
+.home-carousel ul li img,
+.home-carousel-text ul{
   width: 100%;
   overflow: hidden;
   height: 455px;
@@ -41,13 +43,11 @@ body .home-container{
 
 .home-carousel ul li img{
   max-width: none;
-  height: 455px;
 }
 
 .home-carousel-text{
   position: absolute;
   top: 0;
-  height: 455px;
   width: 6000px;
 }
 
@@ -55,7 +55,6 @@ body .home-container{
   float: left;
   position: relative;
   width: 1500px;
-  height: 455px;
   display: block;
 }
 

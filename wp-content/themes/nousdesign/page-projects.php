@@ -57,7 +57,7 @@ get_header(); ?>
                           <a href="<?php echo get_post_meta($image_item['id'] , '_wp_attachment_image_alt', true); ?>">
                             <img src="<?php echo $image_item['image']; ?>" alt="<?php echo $image_item['title']; ?>" title="<?php echo $image_item['title']; ?>" />
 
-                            <h3><?php echo $image_item['title']; ?></h3>
+                            <h3 class="mobile-hide"><?php echo $image_item['title']; ?></h3>
                             <span class="credits">
                               <?php echo $image_item['credits']; ?>
                             </span>
@@ -65,9 +65,10 @@ get_header(); ?>
                         <?php }else{ ?>
                           <img src="<?php echo $image_item['image']; ?>" alt="<?php echo $image_item['title']; ?>" title="<?php echo $image_item['title']; ?>" />
 
-                          <h3><?php echo $image_item['title']; ?></h3>
+                          <h3 class="mobile-hide"><?php echo $image_item['title']; ?></h3>
                         <?php }; ?>
                       </div>
+                      <h3 class="mobile-show"><?php echo $image_item['title']; ?></h3>
                     </div>
                   </li>
                 <?php } ?>

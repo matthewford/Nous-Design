@@ -77,10 +77,17 @@
   body{
     font-size: 7px;
   }
+  .navbar .navbar-inner{
+    padding-top: 50px;
+  }
+  #wrapper-margin{
+    padding-top: 40px;
+  }
 
   .navbar .navbar-inner{
     padding: 0;
     padding-top: 10px;
+    padding-bottom: 5px;
     min-height: 0;
   }
 
@@ -122,6 +129,87 @@
   #footer ul li{
     margin-right: 8%;
     line-height: 1;
+  }
+
+
+
+
+
+
+
+  body .home-container{
+    position: absolute;
+    top: 50%;
+    margin-top: -125px !important;
+  }
+
+  .home-carousel,
+  .home-carousel-text,
+  .home-carousel ul li img,
+  .home-carousel-text ul{
+    height: 250px;
+  }
+  .home-carousel-text{
+    width: 4000px;
+  }
+
+  .home-carousel-text ul{
+    width: 1000px;
+  }
+
+
+
+
+  .page-nousdesign .content-text,
+  .page-services .content-text{
+    padding-left: 5px;
+  }
+  .page-nousdesign .content-text p:nth-child(1),
+  .page-services .content-text p:nth-child(1){
+    margin-top: 0;
+  }
+
+
+
+
+  body .contact-page-height{
+    position: absolute;
+    top: 50%;
+    height: 350px;
+    margin-top: -175px !important;
+  }
+
+
+
+  body .projects-container{
+    position: absolute;
+    top: 50%;
+    margin-top: -160px !important;
+  }
+
+  .project-carousel, 
+  .project-carousel-container, 
+  .project-carousel ul li .project-image-container{
+    height: 350px;
+  }
+
+  .project-carousel ul li img{
+    height: 300px;
+  }
+
+  .project-carousel ul li h3{
+    position: absolute;
+    left: 0;
+    top: 305px;
+    text-align: center;
+    min-width: 0;
+  }
+  
+  .project-carousel-container .carousel-control-prev span{
+    left: 10px;
+  }
+  .project-carousel-container .carousel-control-next span{
+    right: 10px;
   }
 }
 

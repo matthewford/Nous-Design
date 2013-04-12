@@ -1,8 +1,15 @@
 $(function() {
+  //Makes nav text scale to proper widths
+  $('.navbar .nav > li > a').fitText();
+  $(".navbar .nav > li.nav-nous > a").fitText(0.64);
+  $(".navbar .nav > li.nav-services > a").fitText(0.48);
+  $(".navbar .nav > li.nav-projects > a").fitText(0.51);
+  $(".navbar .nav > li.nav-contact > a").fitText(0.58);
+
   //Removes IOS address bar if it can and there isn't a URL hash
   if($('#mobile-check').css('display') == "block"){
     if(!window.location.hash) {
-      setTimeout(function () {   window.scrollTo(0, 1); }, 100);
+      //setTimeout(function () {   window.scrollTo(0, 1); }, 100);
     }
   }
 
@@ -69,11 +76,4 @@ $(function() {
   window.onresize = function(event) {
     $('.project-carousel ul li .project-image-container').width($('.page-projects').width());
   }
-
-  //Makes nav text scale to proper widths
-  $('.navbar .nav > li > a').fitText();
-  $(".navbar .nav > li.nav-nous > a").fitText(0.64);
-  $(".navbar .nav > li.nav-services > a").fitText(0.48);
-  $(".navbar .nav > li.nav-projects > a").fitText(0.51);
-  $(".navbar .nav > li.nav-contact > a").fitText(0.58);
 });
