@@ -166,7 +166,8 @@
 
   .page-nousdesign .content-text,
   .page-services .content-text{
-    padding-left: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
   }
   .page-nousdesign .content-text p:nth-child(1),
   .page-services .content-text p:nth-child(1){
@@ -196,7 +197,7 @@
   body .projects-container{
     position: absolute;
     top: 50%;
-    margin-top: -160px !important;
+    margin-top: -150px !important;
   }
 
   .project-carousel, 
@@ -220,6 +221,7 @@
     top: 305px;
     text-align: center;
     min-width: 0;
+    font-size: 1.6em;
   }
 
   .project-carousel-container .carousel-control{
@@ -236,9 +238,77 @@
 
 /* iPhones (landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
+  body {
+    min-height: 270px;
+  }
+
   #wrapper-margin,
   #footer,
   .container-fluid{
     min-width: 480px;
+  }
+
+  body .home-container{
+    margin-top: -90px !important;
+  }
+
+  .home-carousel,
+  .home-carousel-text,
+  .home-carousel ul li img,
+  .home-carousel-text ul{
+    height: 200px;
+  }
+
+
+
+  body .contact-page-height{
+    position: absolute;
+    top: 50%;
+    height: 200px;
+    margin-top: -90px !important;
+  }
+
+  .page-contact .contact-foreground{
+    padding-top: 20px;
+  }
+
+  .page-contact .contact-background{
+    padding-top: 40px;
+  }  
+
+
+
+
+  body .projects-container{
+    position: absolute;
+    top: 50%;
+    margin-top: -90px !important;
+  }
+
+  .project-carousel, 
+  .project-carousel-container, 
+  .project-carousel ul li .project-image-container{
+    height: 203px;
+  }
+
+  .project-carousel ul li .project-image{
+    width: 100%;
+  }
+
+  .project-carousel ul li img{
+    height: 183px;
+    width: auto;
+  }
+
+  .project-carousel ul li h3{
+    position: absolute;
+    left: 0;
+    top: 185px;
+    text-align: center;
+    min-width: 0;
+  }
+
+  .project-carousel ul li .project-image{
+    width: auto;
   }
 }
