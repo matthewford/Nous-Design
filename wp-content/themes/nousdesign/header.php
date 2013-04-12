@@ -3,7 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <?php $isiPad = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'iPad');
+      if ( $isiPad ) { ?>
+        <meta name="viewport" content="width=device-width, initial-scale=0.78367346938">
+      <?php } else { ?>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php } ?>
 
     <!-- Le styles -->
     <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/font.css" rel="stylesheet">
@@ -17,6 +23,8 @@
     <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/page-services.css" rel="stylesheet">
     <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/page-projects.css" rel="stylesheet">
     <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/page-contact.css" rel="stylesheet"> 
+
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/ios.css" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px), only screen and (min-device-width : 320px) and (max-device-width : 480px)" rel="stylesheet"/>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -38,6 +46,9 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
+    <div id="mobile-check"></div>
+    <div id="ios-check"></div>
+
     <div id="wrapper">
       <div id="wrapper-margin">
 

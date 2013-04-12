@@ -1,4 +1,13 @@
 $(function() {
+  //Removes IOS address bar if it can and there isn't a URL hash
+  if($('#mobile-check').css('display') == "block"){
+    if(!window.location.hash) {
+      setTimeout(function () {   window.scrollTo(0, 1); }, 100);
+    }
+  }
+
+
+
   //Home page carousel
   var win_width = $(window).width();   // returns width of browser viewport
   var win_height = $(window).height();   // returns height of browser viewport

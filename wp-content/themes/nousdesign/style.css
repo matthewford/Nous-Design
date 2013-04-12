@@ -23,6 +23,16 @@ Tags: responsive, bootstrap, nousdesign, nous
 /*################################################*/
 /*################# BODY LAYOUT ##################*/
 /*################################################*/
+#mobile-check,
+#ios-check{
+  display: none;
+}
+.mobile-hide{
+  display: block;
+}
+.mobile-show{
+  display: none;
+}
 
 html, body{
   height: 100%;

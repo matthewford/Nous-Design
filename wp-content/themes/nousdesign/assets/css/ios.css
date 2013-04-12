@@ -1,0 +1,153 @@
+/* iPads (portrait and landscape) ----------- */
+/* And ----------------------------------------*/
+/* iPhones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px), only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #ios-check{
+    display: block;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  .navbar .navbar-inner{
+    padding-top: 50px;
+  }
+  #wrapper-margin{
+    padding-top: 90px;
+  }
+
+  body .projects-container{
+    margin-top: -230px;
+  }
+
+  body .home-container{
+    margin-top: -230px;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .project-carousel-container .carousel-control-prev span{
+    left: 10px;
+  }
+  .project-carousel-container .carousel-control-next span{
+    right: 10px;
+  }
+}
+
+/* iPhones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #mobile-check{
+    display: block;
+  }
+
+  .mobile-hide{
+    display: none;
+  }
+  .mobile-show{
+    display: block;
+  }
+
+  #wrapper-margin,
+  #footer,
+  .container-fluid{
+    min-width: 320px;
+  }
+
+  body{
+    font-size: 7px;
+  }
+
+  .navbar .navbar-inner{
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar .nav.pull-right{
+    clear: both;
+    float: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+  }
+
+  .navbar .nav > li{
+    margin-bottom: 15px;
+    float: none;
+    display: inline-block;
+  }
+
+  body #wrapper-margin{
+    padding-bottom: 250px;
+  }
+
+  body #footer{
+    height: 250px;
+    margin-top: -250px;
+  }
+
+  body #footer ul{
+    margin: 0;
+    float: none;
+  }
+
+  #footer ul li{
+    margin-bottom: 5px;
+  }
+
+  #footer ul li a{
+    text-transform: uppercase;
+  }
+}
+
+/* iPhones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
+  #wrapper-margin,
+  #footer,
+  .container-fluid{
+    min-width: 480px;
+  }
+
+
+  body #wrapper-margin{
+    padding-bottom: 170px;
+  }
+  
+  body #footer{
+    height: 170px;
+    margin-top: -170px;
+  }
+
+  body #footer ul{
+    margin: 0;
+    float: left;
+    width: 45%;
+  }
+
+  #footer .row-fluid .span2{
+    width: 25%;
+    margin-left: 0;
+  }
+
+  #footer .row-fluid .span2 p{
+    padding-left: 0px;
+  }
+
+  body #footer .contact-links .twitter-link{
+    padding-top: 3px;
+    padding-bottom: 6px;
+  }
+
+  #footer ul li{
+    margin-bottom: 5px;
+  }
+
+  #footer ul li a{
+    text-transform: uppercase;
+  }
+}
