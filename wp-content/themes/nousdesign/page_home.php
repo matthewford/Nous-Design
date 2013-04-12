@@ -8,36 +8,36 @@
  */
 
 get_header(); ?>
+  <?php 
+    $all_images = array();
+
+    if ( have_posts() ) : while ( have_posts() ) : the_post();
+      $args = array(
+        'numberposts' => -1, // Using -1 loads all posts
+        'orderby' => 'menu_order', // This ensures images are in the order set in the page media manager
+        'order'=> 'ASC',
+        'post_mime_type' => 'image', // Make sure it doesn't pull other resources, like videos
+        'post_parent' => $post->ID, // Important part - ensures the associated images are loaded
+        'post_status' => null,
+        'post_type' => 'attachment'
+      );
+
+      $images = get_children( $args );
+
+      if($images){
+        foreach($images as $image){
+          array_push( $all_images, array(
+            "id"      => $image->ID,
+            "title"   => $image->post_title,
+            "image"   => $image->guid
+          ));
+        }
+      }
+
+    endwhile; endif;
+  ?>
   <div class="container-fluid home-container">
     <div class="home-carousel">
-      <?php 
-        $all_images = array();
-
-        if ( have_posts() ) : while ( have_posts() ) : the_post();
-          $args = array(
-            'numberposts' => -1, // Using -1 loads all posts
-            'orderby' => 'menu_order', // This ensures images are in the order set in the page media manager
-            'order'=> 'ASC',
-            'post_mime_type' => 'image', // Make sure it doesn't pull other resources, like videos
-            'post_parent' => $post->ID, // Important part - ensures the associated images are loaded
-            'post_status' => null,
-            'post_type' => 'attachment'
-          );
-
-          $images = get_children( $args );
-
-          if($images){
-            foreach($images as $image){
-              array_push( $all_images, array(
-                "id"      => $image->ID,
-                "title"   => $image->post_title,
-                "image"   => $image->guid
-              ));
-            }
-          }
-
-        endwhile; endif;
-      ?>
       <ul>
         <?php foreach($all_images as $image_item){ ?>
           <li>
