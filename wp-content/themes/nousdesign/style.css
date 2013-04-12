@@ -67,6 +67,16 @@ body{
   background: #edeef0;
 }
 
+#wrapper-margin,
+#footer,
+.container-fluid{
+  min-width: 800px;
+}
+
+#ie8 #footer{
+  min-width: 800px;
+}
+
 .page-template-page-projects-php #wrapper{
   background: #d3d4d5 url(assets/images/background_gradient_projects.png) repeat-x top center;
   background: -moz-linear-gradient(top,  #82807b 20%, #d3d4d5 80%); /* FF3.6+ */
