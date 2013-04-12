@@ -9,7 +9,7 @@ $(function() {
   //Removes IOS address bar if it can and there isn't a URL hash
   if($('#mobile-check').css('display') == "block"){
     if(!window.location.hash) {
-      //setTimeout(function () {   window.scrollTo(0, 1); }, 100);
+      setTimeout(function () {   window.scrollTo(0, 1); }, 100);
     }
   }
 
