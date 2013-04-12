@@ -107,8 +107,12 @@
     left: 3px;
   }
 
+  body {
+    min-height: 420px;
+  }
+
   body #wrapper-margin{
-    padding-bottom: 25px;
+    padding-bottom: 0;//25px;
   }
 
   body #footer{
@@ -140,14 +144,14 @@
   body .home-container{
     position: absolute;
     top: 50%;
-    margin-top: -125px !important;
+    margin-top: -155px !important;
   }
 
   .home-carousel,
   .home-carousel-text,
   .home-carousel ul li img,
   .home-carousel-text ul{
-    height: 250px;
+    height: 320px;
   }
   .home-carousel-text{
     width: 4000px;
@@ -180,7 +184,11 @@
     position: absolute;
     top: 50%;
     height: 350px;
-    margin-top: -175px !important;
+    margin-top: -165px !important;
+  }
+
+  .page-contact .contact-foreground{
+    padding-top: 100px;
   }
 
 
