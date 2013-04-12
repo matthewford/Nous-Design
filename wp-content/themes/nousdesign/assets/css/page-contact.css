@@ -59,6 +59,10 @@ body .contact-page-height{
   color: #727473;
 }
 
+.page-contact .contact-foreground a{
+  color: #727473;
+}
+
 .page-contact .contact-foreground h1{
   text-transform: uppercase;
   line-height: 1;
@@ -76,10 +80,11 @@ body .contact-page-height{
   margin-bottom: 10px;
 }
 
-.page-contact .contact-foreground a{
+.page-contact .contact-foreground em a{
   color: #333436;
+  font-style: normal;
 }
 
-.page-contact .contact-foreground a:hover{
+.page-contact .contact-foreground em a:hover{
   color: #fff;
 }
