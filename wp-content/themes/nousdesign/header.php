@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Le styles -->
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/font.css" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/base.css" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/theme.css" rel="stylesheet">
     <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/page-home.css" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/page-nousdesign.css" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/page-services.css" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/page-projects.css" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/page-contact.css" rel="stylesheet"> 
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -18,6 +28,12 @@
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/jquery.fittext.js"></script>
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/main.js"></script>
+
+    <!-- Responsive Media queries for IE6-8 -->
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/respond.min.js"></script>
+    <![endif]-->
+
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>

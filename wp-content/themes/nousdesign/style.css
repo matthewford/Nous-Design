@@ -8,17 +8,6 @@ Version: 1.0
 Tags: responsive, bootstrap, nousdesign, nous
 */
 
-@import url('assets/css/font.css'); 
-@import url('bootstrap/css/bootstrap.css'); 
-@import url('bootstrap/css/bootstrap-responsive.css');
-@import url('assets/css/base.css');
-@import url('assets/css/theme.css');
-@import url('assets/css/page-home.css'); 
-@import url('assets/css/page-nousdesign.css'); 
-@import url('assets/css/page-services.css'); 
-@import url('assets/css/page-projects.css'); 
-@import url('assets/css/page-contact.css'); 
-
 #html{
   margin-top: 0 !important;
 }
@@ -67,14 +56,16 @@ body{
   background: #edeef0;
 }
 
+
+#wrapper,
 #wrapper-margin,
 #footer,
 .container-fluid{
-  min-width: 800px;
+  min-width: 767px;
 }
 
 #ie8 #footer{
-  min-width: 800px;
+  min-width: 767px;
 }
 
 .page-template-page-projects-php #wrapper{
@@ -177,10 +168,9 @@ body{
   .logged-in #wrapper-margin{
     padding-top: 128px;
   }
-}
 
-@media (max-width: 600px){
-  #footer li{
-    margin-right: 12%;
+  #footer,
+  .navbar-fixed-top{
+    position: absolute;
   }
 }

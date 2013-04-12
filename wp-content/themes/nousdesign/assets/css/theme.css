@@ -4,6 +4,7 @@
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+  padding: 0;
   padding-top: 70px;
   padding-bottom: 5px;
 }
@@ -11,14 +12,14 @@
 .navbar .nav{
   margin: 0;
   float: none;
-  position: relative;
-  left: -5px;
 }
 
 .navbar .nav > li{
   float: none;
   display: inline-block;
   margin: 0;
+  position: relative;
+  left: 10px;
 }
 
 .navbar .nav > li.nav-nous{
