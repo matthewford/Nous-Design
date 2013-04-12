@@ -236,6 +236,58 @@
   }
 }
 
+
+/* iPhone5 (portrait) ----------- */
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    min-height: 504px;
+  }
+
+  body .home-container{
+    margin-top: -200px !important;
+  }
+
+  .home-carousel,
+  .home-carousel-text,
+  .home-carousel ul li img,
+  .home-carousel-text ul{
+    height: 400px;
+  }
+
+
+
+
+
+  body .projects-container{
+    position: absolute;
+    top: 50%;
+    margin-top: -200px !important;
+  }
+
+  .project-carousel, 
+  .project-carousel-container, 
+  .project-carousel ul li .project-image-container{
+    height: 420px;
+  }
+
+  .project-carousel ul li .project-image{
+    width: 100%;
+  }
+
+  .project-carousel ul li img{
+    height: 400px;
+    width: auto;
+  }
+
+  .project-carousel ul li h3{
+    position: absolute;
+    left: 0;
+    top: 405px;
+    text-align: center;
+    min-width: 0;
+  }
+}
+
 /* iPhones (landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
   body {
