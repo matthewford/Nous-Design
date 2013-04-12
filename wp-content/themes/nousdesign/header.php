@@ -24,6 +24,7 @@
     <![endif]-->
 
     <?php wp_enqueue_script("jquery"); ?>
+    <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/jquery.jcarousel.min.js"></script>
     <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/jquery.fittext.js"></script>
