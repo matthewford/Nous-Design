@@ -54,19 +54,20 @@ body .contact-page-height{
 
 .page-contact .contact-foreground{
   position: relative;
-  padding-top: 120px;
+  padding-top: 130px;
   padding-bottom: 100px;
-  color: #727473;
 }
 
+.page-contact .contact-foreground,
 .page-contact .contact-foreground a{
-  color: #727473;
+  color: #797979;
 }
 
 .page-contact .contact-foreground h1{
   text-transform: uppercase;
   line-height: 1;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
+  font-size: 3.9em;
 }
 
 .page-contact .contact-foreground h1 em,
@@ -76,8 +77,13 @@ body .contact-page-height{
 }
 
 .page-contact .contact-foreground p{
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  font-size: 1.6em;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+
+.page-contact .contact-foreground p:nth-child(2){
+  margin-bottom: 6px;
 }
 
 .page-contact .contact-foreground em a{
