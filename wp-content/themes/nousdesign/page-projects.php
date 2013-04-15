@@ -79,7 +79,7 @@ get_header(); ?>
       </div>
     </div>
     
-    <div class="projects-carousel-text-container">
+    <div class="projects-carousel-text-container mobile-hide">
       <div class="home-carousel-text home-carousel-text-right">
         <ul>
           <li class="large nous nousdesign_1">
