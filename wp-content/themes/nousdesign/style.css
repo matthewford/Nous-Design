@@ -55,6 +55,9 @@ body{
   background-repeat: no-repeat;
   background-color: #edeef0;
 }
+a {
+  outline: 0;
+}
 
 #mobile-wrapper{
   min-height: 100%;
