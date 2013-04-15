@@ -77,11 +77,11 @@ body .projects-container{
 }
 
 .project-carousel-container .carousel-control-prev{
-  left: 0;
+  left: -70px;
 }
 .project-carousel-container .carousel-control-next{
   left: auto;
-  right: 0;
+  right: -70px;
 }
 .project-carousel-container .carousel-control-prev span{
   left: 0;
@@ -113,24 +113,50 @@ body .projects-container{
 .project-carousel ul li .project-image{
   display: inline-block;
   position: relative;
+    padding-bottom: 40px;
 }
 
 .project-carousel ul li img{
   max-width: 100%;
   height: 455px;
 }
+
 @media (max-width: 1000px){
   .project-carousel ul li .project-image-container{
     overflow: hidden;
   }
+
   .project-carousel ul li img{
     max-width: none;
   }
 }
 
+@media (max-width: 1140px){
+  .project-carousel ul li .project-image{
+    width: 80%;
+    overflow: hidden;
+  }
+
+  .project-carousel-container .carousel-control-next{
+    right: 0px;
+  }
+
+  .project-carousel-container .carousel-control-prev{
+    left: 0px;
+  }
+
+  .project-carousel-container .carousel-control-next span{
+    right: 10px;
+  }
+
+  .project-carousel-container .carousel-control-prev span{
+    left: 10px;
+  }
+}
+
 .project-carousel ul li h3{
   position: absolute;
-  bottom: -34px;
+  bottom: 0px;
   color: #747474;
   font-family: 'Myriad Pro', helvetica, arial, sans-serif;
   font-size: 2.1em;
