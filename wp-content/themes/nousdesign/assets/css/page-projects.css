@@ -15,6 +15,29 @@ body .projects-container{
   }
 }
 
+.page-projects{
+  position: relative;
+  z-index: 999;
+}
+
+.projects-carousel-text-container{
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.projects-carousel-text-container .nousdesign_1{
+  font-size: 23em;
+}
+
+.projects-carousel-text-container  .nousdesign_2{
+  font-size: 19em;
+}
+
 .project-carousel{
   width: 100%;
   overflow: hidden;

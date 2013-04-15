@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Projects copy
+ * Template Name: Projects
  *
  * @package WordPress
  * @subpackage Twenty_Twelve
@@ -39,39 +39,67 @@ get_header(); ?>
     endwhile; 
   ?>
 
-  <div class="container-fluid home-container">
-    <div class="home-carousel">
-      <ul>
-        <?php foreach($all_images as $image_item){ ?>
-          <li>
-            <div class="project-image">
-              <img src="<?php echo $image_item['image']; ?>" alt="<?php echo $image_item['title']; ?>" title="<?php echo $image_item['title']; ?>"/>
+  <div class="container-fluid projects-container">
+    <div class="row-fluid page-projects">
+      <div class="span12">
 
-              <h3><?php echo $image_item['title']; ?></h3>
+        <?php if(count($all_images) > 0){ ?>
+          <div class="project-carousel-container">
+            <a data-jcarousel-control="true" data-target="-=1" href="#" class="carousel-control carousel-control-prev"><span>&lsaquo;</span></a>
+            <a data-jcarousel-control="true" data-target="+=1" href="#" class="carousel-control carousel-control-next"><span>&rsaquo;</span></a>
+            <div class="project-carousel">
+              <ul>
+                <?php foreach($all_images as $image_item){ ?>
+                  <li>
+                    <div class="project-image-container">
+                      <div class="project-image">
+                        <?php if( strlen($image_item['credits']) > 0 ){ ?>
+                          <a href="<?php echo get_post_meta($image_item['id'] , '_wp_attachment_image_alt', true); ?>">
+                            <img src="<?php echo $image_item['image']; ?>" alt="<?php echo $image_item['title']; ?>" title="<?php echo $image_item['title']; ?>" />
+
+                            <h3 class="mobile-hide"><?php echo $image_item['title']; ?></h3>
+                            <span class="credits">
+                              <?php echo $image_item['credits']; ?>
+                            </span>
+                          </a>
+                        <?php }else{ ?>
+                          <img src="<?php echo $image_item['image']; ?>" alt="<?php echo $image_item['title']; ?>" title="<?php echo $image_item['title']; ?>" />
+
+                          <h3 class="mobile-hide"><?php echo $image_item['title']; ?></h3>
+                        <?php }; ?>
+                      </div>
+                      <h3 class="mobile-show"><?php echo $image_item['title']; ?></h3>
+                    </div>
+                  </li>
+                <?php } ?>
+              </ul>
             </div>
-          </li>
+          </div>
         <?php } ?>
-      </ul>
+      </div>
     </div>
-    <div class="home-carousel-text home-carousel-text-right">
-      <ul>
-        <li class="large nous nousdesign_1">
-          Nous
-        </li>
-        <li class="small design nousdesign_4">
-          Design
-        </li>
-      </ul>
-    </div>
-    <div class="home-carousel-text home-carousel-text-left">
-      <ul>
-        <li class="large design nousdesign_2">
-          Design
-        </li>
-        <li class="small nous nousdesign_3">
-          Nous
-        </li>
-      </ul>
+    
+    <div class="projects-carousel-text-container">
+      <div class="home-carousel-text home-carousel-text-right">
+        <ul>
+          <li class="large nous nousdesign_1">
+            Nous
+          </li>
+          <li class="small design nousdesign_4">
+            Design
+          </li>
+        </ul>
+      </div>
+      <div class="home-carousel-text home-carousel-text-left">
+        <ul>
+          <li class="large design nousdesign_2">
+            Design
+          </li>
+          <li class="small nous nousdesign_3">
+            Nous
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 
