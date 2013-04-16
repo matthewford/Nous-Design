@@ -106,6 +106,15 @@
     display: inline-block;
     left: 3px;
   }
+  .navbar .nav > li.nav-services{
+    position: relative;
+    left: 0px;
+  }
+  .navbar .nav > li.nav-projects,
+  .navbar .nav > li.nav-contact{
+    position: relative;
+    left: -2px;
+  }
 
   body {
     min-height: 420px;

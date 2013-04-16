@@ -1,9 +1,10 @@
 $(function() {
   //Makes nav text scale to proper widths
   $('.navbar .nav > li > a').fitText();
-  $(".navbar .nav > li.nav-nous > a").fitText(0.64);
+  $(".navbar .nav > li.nav-nous > a").fitText(0.27);
+  $(".navbar .nav > li.nav-design > a").fitText(0.37);
   $(".navbar .nav > li.nav-services > a").fitText(0.48);
-  $(".navbar .nav > li.nav-projects > a").fitText(0.51);
+  $(".navbar .nav > li.nav-projects > a").fitText(0.50);
   $(".navbar .nav > li.nav-contact > a").fitText(0.58);
 
   //Removes IOS address bar if it can and there isn't a URL hash

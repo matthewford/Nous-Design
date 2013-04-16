@@ -56,8 +56,11 @@
           <div class="container-fluid">
             <a class="brand logo" href="<?php echo site_url(); ?>"><h1><?php bloginfo('name'); ?></h1></a>
             <ul class="nav">
-              <li class="nav-nous">
-                <a href="<?php echo site_url(); ?>/nous-design/">NousDesign</a>
+              <li class="nav-nousdesign nav-nous">
+                <a href="<?php echo site_url(); ?>">Nous</a>
+              </li>
+              <li class="nav-nousdesign nav-design">
+                <a href="<?php echo site_url(); ?>/nous-design/">Design</a>
               </li>
               <li class="nav-services">
                 <a href="<?php echo site_url(); ?>/services/">Services</a>
@@ -83,8 +86,11 @@
               <div class="container-fluid">
                 <a class="brand logo" href="<?php echo site_url(); ?>"><h1><?php bloginfo('name'); ?></h1></a>
                 <ul class="nav">
-                  <li class="nav-nous">
-                    <a href="<?php echo site_url(); ?>/nous-design/">NousDesign</a>
+                  <li class="nav-nousdesign nav-nous">
+                    <a href="<?php echo site_url(); ?>">Nous</a>
+                  </li>
+                  <li class="nav-nousdesign nav-design">
+                    <a href="<?php echo site_url(); ?>/nous-design/">Design</a>
                   </li>
                   <li class="nav-services">
                     <a href="<?php echo site_url(); ?>/services/">Services</a>

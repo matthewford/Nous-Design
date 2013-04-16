@@ -23,7 +23,11 @@
 }
 
 .navbar .nav > li.nav-nous{
-  width: 28%;
+  width: 12%;
+}
+
+.navbar .nav > li.nav-design{
+  width: 16.5%;
 }
 
 .navbar .nav > li.nav-services{
@@ -52,19 +56,23 @@
 }
 
 .navbar .nav > li.nav-nous > a{
-  color: #696a69;
+  color: #535353;
+}
+.navbar .nav > li.nav-design > a{
+  color: #6f706f;
 }
 .navbar .nav > li.nav-services > a{
   color: #909090;
 }
 .navbar .nav > li.nav-projects > a{
-  color: #aeacac;
+  color: #a1a0a0;
 }
 .navbar .nav > li.nav-contact > a{
   color: #e5e5e5;
 }
 
-.page-template-page-nousdesign-php .navbar .nav > li.nav-nous a,
+.page-template-page_home-php .navbar .nav > li.nav-nous a,
+.page-template-page-nousdesign-php .navbar .nav > li.nav-design a,
 .page-template-page-services-php .navbar .nav > li.nav-services a,
 .page-template-page-projects-php .navbar .nav > li.nav-projects a,
 .page-template-page-contact-php .navbar .nav > li.nav-contact a,
@@ -74,7 +82,10 @@
 }
 
 .navbar .brand{
-  display: none;
+  width: 0;
+  height: 0;
+  padding: 0;
+  text-indent: -9999px;
 }
 
 #footer ul{
