@@ -234,7 +234,6 @@
   }
 
   .project-carousel-container .carousel-control{
-    display: none;
   }
   
   .project-carousel-container .carousel-control-prev span{
@@ -242,6 +241,14 @@
   }
   .project-carousel-container .carousel-control-next span{
     right: 10px;
+  }
+
+
+
+  body .project-carousel ul li .project-image .image-container{
+    min-width: 0;
+    width: auto;
+    background: transparent;
   }
 }
 
