@@ -45,12 +45,69 @@ get_header(); ?>
 
         <?php if(count($all_images) > 0){ ?>
           <div class="project-carousel-container">
-            <a data-jcarousel-control="true" data-target="-=1" href="#" class="carousel-control carousel-control-prev"><span>&lsaquo;</span></a>
-            <a data-jcarousel-control="true" data-target="+=1" href="#" class="carousel-control carousel-control-next"><span>&rsaquo;</span></a>
             <div class="project-carousel">
               <ul>
-                <?php foreach($all_images as $image_item){ ?>
-                  <li>
+                <script>
+                  $(document).ready(function(){
+                    var load_images = [];
+                    var load_images_data = [];
+                    var total_image_width = 0;
+                    <?php foreach($all_images as $image_item){ ?>
+                      load_images.push("<?php echo $image_item['image']; ?>")
+                      load_images_data.push({
+                        "img_id": "<?php echo $image_item['id']; ?>",
+                        "img_title": "<?php echo $image_item['title']; ?>",
+                        "img_link": "<?php echo $image_item['image']; ?>",
+                        "img_credits": "<?php echo $image_item['credits']; ?>",
+                        "img_credits_link": "<?php echo get_post_meta($image_item['id'] , '_wp_attachment_image_alt', true); ?>"
+                      })
+                    <?php } ?>
+
+                    $.imageloader({
+                      urls: load_images,
+                      onComplete: function(images){
+                        // when load is complete
+                      },
+                      onUpdate: function(ratio, image){
+                        // ratio: the current ratio that has been loaded
+                        // image: the URL to the image that was just loaded
+                        if(image){
+                          var index = $('.project-carousel li').size();
+                          $(".project-carousel ul").append('\
+                            <li id="image_' +  index + '" ">\
+                              <div class="project-image-container">\
+                                <div class="project-image">\
+                                  <div class="js_wrap">\
+                                    <img src="' + image + '" alt="'+load_images_data[index].img_title+'" title="'+load_images_data[index].img_title+'" />\
+                                    <h3 class="mobile-hide">'+load_images_data[index].img_title+'</h3>\
+                                  </div>\
+                                </div>\
+                                <h3 class="mobile-show">'+load_images_data[index].img_title+'</h3>\
+                              </div>\
+                            </li>'
+                          );
+                          if(load_images_data[index].img_credits.length>0){
+                            $('.project-carousel ul li:eq(' + index + ') .project-image .js_wrap').wrap('<a href="'+load_images_data[index].img_credits_link+'">').append("<span class='credits'>"+load_images_data[index].img_credits+"</span>");
+                          }
+                          if(index > 0){
+                            total_image_width += $('.project-carousel ul li:eq(' + (index-1) + ') img').width() + 250;
+                          }
+                          $('.project-carousel ul li:eq(' + index + ')').attr("data-height", $('.project-carousel ul li:eq(' + index + ') img').height());
+                          $('.project-carousel ul li:eq(' + index + ')').attr("data-width", $('.project-carousel ul li:eq(' + index + ') img').width());
+                          $('.project-carousel ul li:eq(' + index + ')').attr("data-total-width", total_image_width);
+                          if(index == 0){
+                            $('.project-carousel ul').css('left', (($('.project-carousel ul li:eq(' + index + ')').attr('data-total-width') * -1) - ($('.project-carousel ul li:eq(' + index + ')').attr('data-width')/2))+"px");
+                          }
+                        }
+                      },
+                      onError: function(err){
+                        // err: error message if images couldn't be loaded
+                      }
+                    });
+                  });
+                </script>
+                <?php #foreach($all_images as $image_item){ ?>
+                  <!-- <li>
                     <div class="project-image-container">
                       <div class="project-image">
                         <?php if( strlen($image_item['credits']) > 0 ){ ?>
@@ -70,8 +127,8 @@ get_header(); ?>
                       </div>
                       <h3 class="mobile-show"><?php echo $image_item['title']; ?></h3>
                     </div>
-                  </li>
-                <?php } ?>
+                  </li> -->
+                <?php #} ?>
               </ul>
             </div>
           </div>
@@ -79,27 +136,29 @@ get_header(); ?>
       </div>
     </div>
     
-    <div class="projects-carousel-text-container mobile-hide">
-      <div class="home-carousel-text home-carousel-text-right">
-        <ul>
-          <li class="large nous nousdesign_1">
-            Nous
-          </li>
-          <li class="small design nousdesign_4">
-            Design
-          </li>
-        </ul>
-      </div>
-      <div class="home-carousel-text home-carousel-text-left">
-        <ul>
-          <li class="large design nousdesign_2">
-            Design
-          </li>
-          <li class="small nous nousdesign_3">
-            Nous
-          </li>
-        </ul>
-      </div>
+    <div class="projects-carousel-text-container-shake mobile-hide hide">
+      <ul class="shake-left">
+        <li class="large nous nousdesign_1">
+          Nous
+        </li>
+        <li class="large design nousdesign_2">
+          Design
+        </li>
+      </ul>
+      <ul class="shake-right">
+        <li class="small nous nousdesign_3">
+          Nous
+        </li>
+        <li class="small design nousdesign_4">
+          Design
+        </li>
+      </ul>
+    </div>
+
+    <div class="carousel-control-buttons">
+      <div class="circle"></div>
+      <a data-jcarousel-control="true" data-target="-=1" href="#" class="carousel-control carousel-control-prev"><span>&lsaquo;</span></a>
+      <a data-jcarousel-control="true" data-target="+=1" href="#" class="carousel-control carousel-control-next"><span>&rsaquo;</span></a>
     </div>
   </div>
 

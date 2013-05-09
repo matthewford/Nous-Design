@@ -83,7 +83,8 @@ a {
   min-width: 767px;
 }
 
-.page-template-page-projects-php{
+.page-template-page-projects-php,
+.page-template-page-projectscopy2-php{
   background: url(assets/images/background_gradient_projects.png) repeat-x top center;
   background: -moz-linear-gradient(top,  #82807b 25%, #d3d4d5 45%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,#82807b), color-stop(45%,#d3d4d5)); /* Chrome,Safari4+ */
@@ -95,10 +96,12 @@ a {
   background-repeat: no-repeat;
   background-color: #d3d4d5;
 }
-.page-template-page-projects-php .navbar .navbar-inner{
+.page-template-page-projects-php .navbar .navbar-inner,
+.page-template-page-projectscopy2-php .navbar .navbar-inner{
   background: #82807b;
 }
-.page-template-page-projects-php #footer{
+.page-template-page-projects-php #footer,
+.page-template-page-projectscopy2-php #footer{
   background: #d3d4d5;
 }
 

@@ -105,7 +105,7 @@ body .projects-container{
 }
 
 .project-carousel ul li .project-image-container{
-  width: 1000px;
+  //width: 1000px;
   text-align: center;
   display: block;
 }
@@ -113,7 +113,12 @@ body .projects-container{
 .project-carousel ul li .project-image{
   display: inline-block;
   position: relative;
-    padding-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+.project-carousel ul li .project-image .image-container{
+  background: #a1a0a0;
+  min-width: 710px;
 }
 
 .project-carousel ul li img{
@@ -166,7 +171,7 @@ body .projects-container{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  text-align: left;
+  text-align: center;
 }
 
 .project-carousel ul li .credits{

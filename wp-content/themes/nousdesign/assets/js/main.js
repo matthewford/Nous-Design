@@ -103,4 +103,47 @@ $(function() {
       $(this).jcarousel('scroll', '-=1');
     });
   };
+
+  // var current_img = 1;
+  // var anim_time = 0;
+  // $('[data-jcarousel-control]').click(function(event) {
+  //   event.preventDefault();
+  //   if($(this).hasClass('carousel-control-prev')){
+  //     current_img --;
+  //   }else{
+  //     current_img ++;      
+  //   }
+  //   if( current_img <= 0 ){
+  //     current_img = $('.project-carousel ul li').size();
+  //   }
+  //   if( current_img > $('.project-carousel ul li').size()){
+  //     current_img = 1;
+  //   }
+  //   $('.project-carousel ul').css('left', (($('.project-carousel ul li:nth-child('+(current_img+1)+')').attr('data-total-width') * -1) - ($('.project-carousel ul li:nth-child('+(current_img+1)+')').attr('data-width')/2))+"px");
+
+  //   anim_time = 0;
+  // });
+
+  // setInterval(animFrame, 20);
+  // function animFrame(){
+  //   if(anim_time == 0){
+  //     $('.projects-carousel-text-container-shake ul.shake-left').css('left', "30px");
+  //   }else if(anim_time == 8){
+  //     $('.projects-carousel-text-container-shake ul.shake-left').css('left', "-30px");
+  //   }else if(anim_time == 15){
+  //     $('.projects-carousel-text-container-shake ul.shake-left').css('left', "10px");
+  //   }else if(anim_time == 25){
+  //     $('.projects-carousel-text-container-shake ul.shake-left').css('left', "0px");
+  //   }
+  //   if(anim_time == 0){
+  //     $('.projects-carousel-text-container-shake ul.shake-right').css('right', "30px");
+  //   }else if(anim_time == 8){
+  //     $('.projects-carousel-text-container-shake ul.shake-right').css('right', "-30px");
+  //   }else if(anim_time == 15){
+  //     $('.projects-carousel-text-container-shake ul.shake-right').css('right', "10px");
+  //   }else if(anim_time == 25){
+  //     $('.projects-carousel-text-container-shake ul.shake-right').css('right', "0px");
+  //   }
+  //   anim_time ++;
+  // }
 });
