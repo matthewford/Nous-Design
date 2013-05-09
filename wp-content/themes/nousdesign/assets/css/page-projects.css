@@ -108,6 +108,7 @@ body .projects-container{
   //width: 1000px;
   text-align: center;
   display: block;
+  overflow: hidden;
 }
 
 .project-carousel ul li .project-image{
