@@ -194,3 +194,25 @@ a {
     position: absolute;
   }
 }
+
+@media (max-height: 700px){
+  .navbar .navbar-inner{
+    padding-top: 15px;
+  }
+
+  #wrapper-margin{
+    padding-top: 75px;
+    padding-bottom: 30px;
+  }
+
+  .logged-in #wrapper-margin{
+    padding-top: 103px;
+  }
+
+  #footer{
+    height: 30px;
+  }
+  #footer ul{
+    top: 8px;
+  }
+}
