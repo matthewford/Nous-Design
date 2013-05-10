@@ -6,6 +6,18 @@ body .projects-container{
   margin-top: -250px;
 }
 
+@media (max-height: 850px){
+  body .projects-container{
+    margin-top: -190px;
+  }
+}
+
+@media (max-height: 700px){
+  body .projects-container{
+    margin-top: -210px;
+  }
+}
+
 @media (max-height: 650px){
   body .projects-container{
     position: relative;

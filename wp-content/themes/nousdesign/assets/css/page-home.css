@@ -7,7 +7,7 @@ body .home-container{
 }
 
 
-@media (max-height: 830px){
+@media (max-height: 900px){
   body .home-container{
     margin-top: -190px;
   }
