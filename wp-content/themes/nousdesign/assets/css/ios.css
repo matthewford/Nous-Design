@@ -221,7 +221,7 @@
 
   .project-carousel ul li img{
     height: 300px;
-    width: auto;
+    max-width: 100%;
   }
 
   .project-carousel ul li h3{
