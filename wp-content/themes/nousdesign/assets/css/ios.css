@@ -252,6 +252,12 @@
   }
 }
 
+/* iPhones (portrait) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+  .page-contact .contact-foreground p{
+    margin: 0 auto;
+    max-width: 220px;
+  }
 
 /* iPhone5 (portrait) ----------- */
 @media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
