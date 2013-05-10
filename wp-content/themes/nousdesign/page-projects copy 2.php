@@ -49,8 +49,106 @@ get_header(); ?>
             <a data-jcarousel-control="true" data-target="+=1" href="#" class="carousel-control carousel-control-next"><span>&rsaquo;</span></a>
             <div class="project-carousel">
               <ul>
-                <?php foreach($all_images as $image_item){ ?>
-                  <li>
+                <script>
+                  $(document).ready(function(){
+                    var load_images = [];
+                    var load_images_data = [];
+                    //var order_img = [];
+                    var index = 0;
+                    <?php foreach($all_images as $image_item){ ?>
+                      load_images.push("<?php echo $image_item['image']; ?>")
+                      load_images_data.push({
+                        "img_id": "<?php echo $image_item['id']; ?>",
+                        "img_title": "<?php echo $image_item['title']; ?>",
+                        "img_link": "<?php echo $image_item['image']; ?>",
+                        "img_credits": "<?php echo $image_item['credits']; ?>",
+                        "img_credits_link": "<?php echo get_post_meta($image_item['id'] , '_wp_attachment_image_alt', true); ?>"
+                      })
+
+                      $(".project-carousel ul").append('\
+                        <li id="image_' +  index + '" ">\
+                          <div class="project-image-container">\
+                            <div class="project-image">\
+                              <div class="js_wrap">\
+                                <div class="image-container">\
+                                </div>\
+                                <h3 class="mobile-hide"></h3>\
+                              </div>\
+                            </div>\
+                            <h3 class="mobile-show"></h3>\
+                          </div>\
+                        </li>'
+                      );
+
+                      index ++;
+                    <?php } ?>
+
+                    $.imageloader({
+                      urls: load_images,
+                      onComplete: function(images){
+                        // when load is complete
+                        //alert( order_img );
+                      },
+                      onUpdate: function(ratio, image){
+                        // ratio: the current ratio that has been loaded
+                        // image: the URL to the image that was just loaded
+                        if(image){
+                          var index = $('.project-carousel li').size();
+                          for(var n = 0; n < load_images.length; n++){
+                            if(image == load_images[n]){
+                              //order_img.push(n);
+                              $("#image_"+n).find(".image-container").append('<img src="' + image + '" alt="'+load_images_data[n].img_title+'" title="'+load_images_data[n].img_title+'" />')
+                              $("#image_"+n).find("h3").text(load_images_data[n].img_title);
+
+
+                              if(load_images_data[n].img_credits.length>0){
+                                $('.project-carousel ul li:eq(' + n + ') .project-image .js_wrap').wrap('<a href="'+load_images_data[n].img_credits_link+'">').append("<span class='credits'>"+load_images_data[n].img_credits+"</span>");
+                              }
+                              $('.project-carousel ul li:eq(' + n + ')').attr("data-height", $('.project-carousel ul li:eq(' + n + ') img').height());
+                              $('.project-carousel ul li:eq(' + n + ')').attr("data-width", $('.project-carousel ul li:eq(' + n + ') img').width());
+
+                              $('.project-carousel').jcarousel({
+                                'wrap': 'circular',
+                                'animation': {
+                                  'duration': 300,
+                                  'easing':   'linear'
+                                }
+                              });
+
+                              //scales carousel
+                              $('.project-carousel ul li .project-image-container').width($('.page-projects').width());
+                              window.onresize = function(event) {
+                                $('.project-carousel ul li .project-image-container').width($('.page-projects').width());
+                              }
+
+                              break;
+                            };
+                          }
+                          // $(".project-carousel ul").append('\
+                          //   <li id="image_' +  index + '" ">\
+                          //     <div class="project-image-container">\
+                          //       <div class="project-image">\
+                          //         <div class="js_wrap">\
+                          //           <div class="image-container">\
+                          //             <img src="' + image + '" alt="'+load_images_data[index].img_title+'" title="'+load_images_data[index].img_title+'" />\
+                          //           </div>\
+                          //           <h3 class="mobile-hide">'+load_images_data[index].img_title+'</h3>\
+                          //         </div>\
+                          //       </div>\
+                          //       <h3 class="mobile-show">'+load_images_data[index].img_title+'</h3>\
+                          //     </div>\
+                          //   </li>'
+                          // );
+                        }
+                      },
+                      onError: function(err){
+                        // err: error message if images couldn't be loaded
+                      }
+                    });
+                  });
+                </script>
+                <?php #foreach($all_images as $image_item){ ?>
+                  <!-- <li>
                     <div class="project-image-container">
                       <div class="project-image">
                         <?php if( strlen($image_item['credits']) > 0 ){ ?>
@@ -72,8 +170,8 @@ get_header(); ?>
                       </div>
                       <h3 class="mobile-show"><?php echo $image_item['title']; ?></h3>
                     </div>
-                  </li>
-                <?php } ?>
+                  </li> -->
+                <?php #} ?>
               </ul>
             </div>
           </div>
