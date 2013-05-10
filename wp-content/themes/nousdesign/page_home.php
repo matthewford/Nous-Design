@@ -38,13 +38,15 @@ get_header(); ?>
   ?>
   <div class="container-fluid home-container">
     <div class="home-carousel">
-      <ul>
-        <?php foreach($all_images as $image_item){ ?>
-          <li>
-            <img src="<?php echo $image_item['image']; ?>" alt="<?php echo $image_item['title']; ?>" title="<?php echo $image_item['title']; ?>"/>
-          </li>
-        <?php } ?>
-      </ul>
+      <div class="home-carousel-container">
+        <ul>
+          <?php foreach($all_images as $image_item){ ?>
+            <li>
+              <img src="<?php echo $image_item['image']; ?>" alt="<?php echo $image_item['title']; ?>" title="<?php echo $image_item['title']; ?>"/>
+            </li>
+          <?php } ?>
+        </ul>
+      </div>
     </div>
     <div class="home-carousel-text home-carousel-text-right">
       <ul>
