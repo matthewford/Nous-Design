@@ -61,6 +61,7 @@ get_header(); ?>
               <div class="project-image">\
                 <div class="js_wrap">\
                   <div class="image-container">\
+                    <div class="image-resize imgLiquidNoFill imgLiquid"></div>\
                   </div>\
                   <h3 class="mobile-hide"></h3>\
                 </div>\
@@ -101,7 +102,7 @@ get_header(); ?>
             for(var n = 0; n < load_images.length; n++){
               if(image == load_images[n]){
                 //order_img.push(n);
-                $("#image_"+n).find(".image-container").append('<img src="' + image + '" alt="'+load_images_data[n].img_title+'" title="'+load_images_data[n].img_title+'" />')
+                $("#image_"+n).find(".image-container .image-resize").append('<img src="' + image + '" alt="'+load_images_data[n].img_title+'" title="'+load_images_data[n].img_title+'" />')
                 $("#image_"+n).find("h3").text(load_images_data[n].img_title);
 
 
@@ -110,6 +111,12 @@ get_header(); ?>
                 }
                 $('.project-carousel ul li:eq(' + n + ')').attr("data-height", $('.project-carousel ul li:eq(' + n + ') img').height());
                 $('.project-carousel ul li:eq(' + n + ')').attr("data-width", $('.project-carousel ul li:eq(' + n + ') img').width());
+
+                if($("#mobile-check").css("display") == "block"){
+                  $('.project-carousel ul li:eq(' + n + ') .image-resize').imgLiquid({
+                    fill: false
+                  });
+                }
 
                 break;
               };

@@ -219,9 +219,15 @@
     width: 100%;
   }
 
+  .project-carousel ul li .image-resize{
+    width: 320px !important;
+    height: 300px !important;
+  }
+
   .project-carousel ul li img{
     height: 300px;
     max-width: 100%;
+    visibility: hidden !important;
   }
 
   .project-carousel ul li h3{
@@ -262,6 +268,7 @@
     margin: 0 auto;
     max-width: 220px;
   }
+}
 
 /* iPhone5 (portrait) ----------- */
 @media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -293,7 +300,7 @@
   .project-carousel, 
   .project-carousel-container, 
   .project-carousel ul li .project-image-container{
-    height: 420px;
+    height: 430px;
   }
 
   .project-carousel ul li .project-image{
@@ -366,7 +373,7 @@
   .project-carousel, 
   .project-carousel-container, 
   .project-carousel ul li .project-image-container{
-    height: 203px;
+    height: 215px;
   }
 
   .project-carousel ul li .project-image{
@@ -388,5 +395,22 @@
 
   .project-carousel ul li .project-image{
     width: auto;
+  }
+
+
+
+
+  .project-carousel ul li .image-resize{
+    width: 480px !important;
+    height: 180px !important;
+  }
+}
+
+
+/* iPhone5 (landscape) ----------- */
+@media (device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .project-carousel ul li .image-resize{
+    width: 568px !important;
+    height: 180px !important;
   }
 }
