@@ -233,11 +233,15 @@
     font-size: 1.6em;
   }
 
-  .project-carousel-container .carousel-control{
+  .project-carousel-container .carousel-control span{
+    width: 24px;
+    height: 27px;
+    background-size: 24px 77px;
   }
   
   .project-carousel-container .carousel-control-prev span{
     left: 10px;
+    background-position: 0 -50px;
   }
   .project-carousel-container .carousel-control-next span{
     right: 10px;
